@@ -1,0 +1,10 @@
+
+<h2>This is parent Component</h2><br>
+<label>Enter The Number One</label>
+<input type="text" [(ngModel)]="firstNumber" ><br><br>
+
+<label>Enter The Number Two</label>
+<input type="text" [(ngModel)]="secondNumber"><br><br>
+
+<h1>{{childData}}</h1>
+<app-child (notify)="addNumber($event)" [parentD]="childData" [firstNumberP]="firstNumber" [firstNumberP1]="secondNumber"></app-child>
